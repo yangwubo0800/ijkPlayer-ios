@@ -9,27 +9,29 @@ https://www.jianshu.com/p/65fb80dff4d6
 
 
 使用时需要按照B站说明添加很多依赖库：
-#         IJKMediaFramework.framework
-#
-#         AudioToolbox.framework
-#         AVFoundation.framework
-#         CoreGraphics.framework
-#         CoreMedia.framework
-#         CoreVideo.framework
-#         libbz2.tbd
-#         libz.tbd
-#         MediaPlayer.framework
-#         MobileCoreServices.framework
-#         OpenGLES.framework
-#         QuartzCore.framework
-#         UIKit.framework
-#         VideoToolbox.framework
-#
-#         ... (Maybe something else, if you get any link error)
+
+        IJKMediaFramework.framework
+
+        AudioToolbox.framework
+        AVFoundation.framework
+        CoreGraphics.framework
+        CoreMedia.framework
+        CoreVideo.framework
+        libbz2.tbd
+        libz.tbd
+        MediaPlayer.framework
+        MobileCoreServices.framework
+        OpenGLES.framework
+        QuartzCore.framework
+        UIKit.framework
+        VideoToolbox.framework
+
+         ... (Maybe something else, if you get any link error)
 
 
 
 下面记录一下自己由于不细心遇到的其他问题：
+
 1、Showing All Messages
 :-1: Undefined symbol: _IJKMPMoviePlayerPlaybackStateDidChangeNotification
 
