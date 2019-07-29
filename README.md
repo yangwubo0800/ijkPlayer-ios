@@ -48,3 +48,10 @@ https://www.jianshu.com/p/65fb80dff4d6
 
 3、注意设置支持横屏模式,因为视频播放的界面代码中设置为横屏模式。
 
+
+4、在使用xcode archive打包上架应用时出现如下问题：
+Showing All Messages
+:-1: Bitcode bundle could not be generated because '/Users/hongboni/Svn/hzinfo3000platform/hzinfo-app/IOS/BaseWebviewApp/BaseWebviewApp/Lib/IJKMediaFramework.framework/IJKMediaFramework(IJKMediaPlayback.o)' was built without full bitcode. All object files and libraries for bitcode must be generated from Xcode Archive or Install build for architecture armv7
+
+原因是我们在编译ijkMediaFramework库时将armv7架构去除了，所以此问题需要做两部处理：关掉xcode的bitcode功能和在打包中去除armv7指令支持。
+
